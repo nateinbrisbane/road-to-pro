@@ -81,6 +81,11 @@ h1,.h1{font-family:var(--head-font);font-weight:var(--head-weight);letter-spacin
 .prog-bar .lb{position:absolute;bottom:16px;transform:translateX(-50%);font-size:14px;color:var(--muted);white-space:nowrap;font-weight:600}
 .prog-bar .lb.l{transform:none} .prog-bar .lb.r{transform:translateX(-100%)}
 .prog-bar .lb.now{color:var(--text);font-weight:700}
+/* the 'now' label rides with the dot: left-anchored near the start, centred mid-way, right-anchored near the end;
+   it drops below the bar when a race label is close. site.js refines both with real widths. */
+.prog-bar .lb.now.c{transform:translateX(-50%)} .prog-bar .lb.now.l{transform:translateX(-8px)} .prog-bar .lb.now.r{transform:translateX(calc(-100% + 8px))}
+.prog-bar .lb.now.below{bottom:auto;top:16px}
+.prog-bar.now-below{margin-bottom:44px}
 .prog-legend{display:flex;justify-content:space-between;font-size:14px;color:var(--subtle);gap:10px;font-weight:500}
 @media(max-width:599px){.prog-bar .lb.mid{display:none}}
 
