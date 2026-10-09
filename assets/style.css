@@ -22,7 +22,7 @@ a{color:inherit;text-decoration:none}
 .nav-links a{padding:7px 13px;border-radius:999px;color:var(--muted);font-size:15px;font-weight:500}
 .nav-links a:hover{color:var(--text)}
 .nav-links a.on{color:var(--nav-on-fg);background:var(--nav-on-bg);font-weight:700}
-@media(max-width:520px){.nav-links a{padding:6px 10px;font-size:14px}.nav-links a.hide-sm{display:none}.brand span{display:none}}
+@media(max-width:520px){.nav-links{gap:2px}.nav-links a{padding:6px 9px;font-size:14px}.nav-links a.hide-sm{display:none}.brand span{display:none}}
 
 /* type */
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--subtle)}
@@ -228,3 +228,23 @@ a.wrow:hover b, a.arow:hover .a1 { color: var(--link); }
 .about p { max-width: 64ch; margin: 0 0 1em; }
 .about p:last-child { margin-bottom: 0; }
 footer a { color: inherit; }
+@media(max-width:360px){.nav-links a{padding:6px 7px;font-size:13.5px}}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:420px){.tbl th,.tbl td{padding-left:6px;padding-right:6px}.tbl th{font-size:13px;letter-spacing:.04em}.tbl td{font-size:14px}}
+@media(max-width:360px){.sec-head .h2{white-space:normal;min-width:0}}
+.rec .big-line:first-child{margin-top:0}
+.rec .big-line .g{color:var(--success);font-weight:700}
+.d-body .nut{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+.d-body .nut-h{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--subtle);margin-bottom:10px}
+.d-body .nut-meals{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px;color:var(--muted);font-size:15px}
+.d-body .nut-meals b{color:var(--text);font-weight:600}
+.d-body .nut .facts{margin-top:0}
+.d-title .d-sub{display:block;margin-top:3px;font-size:14px;font-weight:500;color:var(--muted);line-height:1.45}
+.wfocus{margin:14px 0 0;max-width:62ch;color:var(--muted);font-size:16px}
+.wfocus b{color:var(--text);font-weight:700}
+.d-body .rd + .nut{margin-top:14px}
+.rd-line{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;color:var(--muted)}
+.rd-line b{color:var(--text);font-weight:700}
+.rd-line .warn, .rd-line b.warn{color:var(--warn)}
+.rd-line .g{color:var(--success);font-weight:700}
+.days.plan details.day.planned .d-title{color:var(--text)}
