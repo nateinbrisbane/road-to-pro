@@ -29,3 +29,28 @@
     });
   });
 })();
+
+/* Home 'The road': keep the 'You are here' label on the dot, inside the bar, and clear of race labels. */
+(function () {
+  function place() {
+    document.querySelectorAll('.prog-bar').forEach(function (bar) {
+      var lb = bar.querySelector('.lb.now'), mk = bar.querySelector('.mk.now');
+      if (!lb || !mk) return;
+      var W = bar.clientWidth, x = parseFloat(mk.style.left) / 100 * W;
+      lb.classList.remove('l', 'c', 'r', 'below'); bar.classList.remove('now-below');
+      lb.style.transform = 'none';
+      var w = lb.offsetWidth, left = Math.min(Math.max(x - w / 2, 0), Math.max(W - w, 0));
+      lb.style.left = left + 'px';
+      var r = lb.getBoundingClientRect(), hit = false;
+      bar.querySelectorAll('.lb:not(.now)').forEach(function (o) {
+        if (getComputedStyle(o).display === 'none') return;
+        var q = o.getBoundingClientRect();
+        if (r.right + 10 > q.left && r.left - 10 < q.right) hit = true;
+      });
+      if (hit) { lb.classList.add('below'); bar.classList.add('now-below'); }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', place); else place();
+  window.addEventListener('resize', place);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(place);
+})();
