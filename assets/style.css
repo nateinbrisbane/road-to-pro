@@ -261,3 +261,46 @@ footer a { color: inherit; }
 .wknav-next{margin-left:auto}
 /* journal: one-line focus under the phase label for the next few weeks */
 .arow .a2-line{display:block;margin-top:4px;color:var(--subtle);font-size:14.5px;font-weight:500;line-height:1.45}
+
+/* ---- two-page layout: Home story, latest activity, week list; Training sections ---- */
+.story-text{max-width:640px;margin-top:22px}
+.story-text p{margin:0 0 12px;color:var(--muted);font-size:16.5px;line-height:1.6;font-weight:500}
+.story-text p:first-child{color:var(--text)}
+.latest{display:flex;flex-direction:column;gap:12px}
+.latest .la-t{font-size:18px;font-weight:700;color:var(--text)}
+.latest .pb{margin:0}
+.pbk{color:var(--hi-small)}
+.latest .facts{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:15px;color:var(--muted)}
+.latest .facts b{color:var(--text);font-family:var(--display)}
+.latest .pb{padding:12px 0 0}
+.wl .now, .wk-fold .wk-t .now{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--bg);background:var(--text);border-radius:5px;padding:1px 7px;margin-left:8px;vertical-align:1px}
+.rd-line{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;color:var(--muted)}
+.wlist{display:flex;flex-direction:column}
+.wl{display:grid;grid-template-columns:48px minmax(0,1fr) auto 22px;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);color:inherit;text-decoration:none;font-size:15.5px}
+.wl:last-child{border-bottom:0}
+.wl .wl-d{color:var(--subtle);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.wl .wl-t{color:var(--text);font-weight:600;min-width:0}
+.wl.planned .wl-t{color:var(--muted)}
+.wl .wl-k{color:var(--muted);font-size:14.5px;white-space:nowrap}
+.wl:hover .wl-t{color:var(--link)}
+.h3{font-size:15px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--subtle);margin:26px 0 12px}
+.wk{scroll-margin-top:80px}
+.wk-open{margin-top:26px;padding-top:6px}
+.wk-open + .wk-open{border-top:1px solid var(--border);padding-top:26px}
+.wk-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.wk-t{font-size:20px;font-weight:800;color:var(--text);margin:0}
+.wk-d{color:var(--subtle);font-size:14.5px;font-weight:500}
+.wk-line{color:var(--muted);margin:8px 0 0;font-size:15.5px;line-height:1.55}
+.wk-stats{margin:16px 0 4px}
+details.wk-fold{border-top:1px solid var(--border)}
+details.wk-fold:last-of-type{border-bottom:1px solid var(--border)}
+details.wk-fold > summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"t c" "d c";gap:2px 12px;padding:16px 0;align-items:center}
+details.wk-fold > summary::-webkit-details-marker{display:none}
+details.wk-fold > summary .wk-t{grid-area:t;font-size:17px}
+details.wk-fold > summary .wk-d{grid-area:d}
+details.wk-fold > summary .d-chev{grid-area:c;transition:transform .15s}
+details.wk-fold[open] > summary .d-chev{transform:rotate(90deg)}
+details.wk-fold > summary .now{margin-left:10px}
+.wk-body{padding-bottom:22px}
+.ahead.further{margin-top:30px}
+.wk-extra{margin-top:8px}

@@ -54,3 +54,14 @@
   window.addEventListener('resize', place);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(place);
 })();
+
+/* Training: opening a link to a week (#2026-w42) unfolds that week. */
+(function () {
+  function openHash() {
+    if (!location.hash) return;
+    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el && el.tagName === 'DETAILS' && !el.open) { el.open = true; el.scrollIntoView(); }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', openHash); else openHash();
+  window.addEventListener('hashchange', openHash);
+})();
