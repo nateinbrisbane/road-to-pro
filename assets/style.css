@@ -256,3 +256,6 @@ footer a { color: inherit; }
 .wknav-next{margin-left:auto}
 /* journal: one-line focus under the phase label for the next few weeks */
 .arow .a2-line{display:block;margin-top:4px;color:var(--subtle);font-size:14.5px;font-weight:500;line-height:1.45}
+/* small follow-along link next to mobility lines (same quiet style as the week nav dates) */
+a.mob{color:var(--muted);font-size:13.5px;font-weight:500;text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:3px;white-space:nowrap;margin-left:4px}
+a.mob:hover{color:var(--link)}
