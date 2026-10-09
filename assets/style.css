@@ -250,10 +250,7 @@ footer a { color: inherit; }
 .days.plan details.day.planned .d-title{color:var(--text)}
 
 /* week prev/next nav */
-.wknav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
-.wknav a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);min-width:0}
-.wknav a:hover{border-color:var(--border-strong)} .wknav a:hover .wknav-l{color:var(--link)}
-.wknav-next{grid-column:2;text-align:right;align-items:flex-end}
-.wknav-l{font-weight:700;font-size:16px}
-.wknav-d{color:var(--subtle);font-size:14px;font-weight:500}
-@media(max-width:599px){.wknav{gap:10px}.wknav a{padding:12px}.wknav-l{font-size:15px}.wknav-d{font-size:13px}}
+.wknav{display:flex;justify-content:space-between;margin-top:20px}
+.wknav a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:4px;text-decoration-thickness:1px;font-size:15px;font-weight:500}
+.wknav a:hover{color:var(--text);text-decoration-color:currentColor}
+.wknav-next{margin-left:auto}
