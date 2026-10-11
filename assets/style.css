@@ -312,3 +312,8 @@ details.wk-fold > summary .now{margin-left:10px}
 .link.quiet{color:var(--muted);font-weight:500;font-size:14px;text-decoration-color:var(--border-strong)}
 .link.quiet:hover{color:var(--link)}
 .home-days{margin-top:4px}
+
+/* done vs plan on completed days */
+.d-body .nut-h+ul{margin-top:6px}
+.d-body .plan-list li{color:var(--muted)}
+.xtra{font-size:12px;font-weight:600;color:var(--subtle);border:1px solid var(--border);border-radius:6px;padding:0 6px;margin-left:4px}
