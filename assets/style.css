@@ -313,7 +313,15 @@ details.wk-fold > summary .now{margin-left:10px}
 .link.quiet:hover{color:var(--link)}
 .home-days{margin-top:4px}
 
-/* done vs plan on completed days */
-.d-body .nut-h+ul{margin-top:6px}
-.d-body .plan-list li{color:var(--muted)}
-.xtra{font-size:12px;font-weight:600;color:var(--subtle);border:1px solid var(--border);border-radius:6px;padding:0 6px;margin-left:4px}
+/* plan vs done, side by side, one row per exercise */
+.pvd{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin:4px 0 12px;font-size:14px}
+.pvd>div{padding:8px 10px;border-top:1px solid var(--border);min-width:0}
+.pvd .pvd-h{border-top:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--subtle)}
+.pvd .pvd-p{color:var(--muted);border-right:1px solid var(--border)}
+.pvd .pvd-a.changed{background:rgba(255,200,0,.07)}
+.pvd .pvd-a.extra{background:rgba(80,200,120,.08)}
+.pvd b{font-weight:600}
+.xtra,.chg{font-size:11px;font-weight:600;border-radius:6px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.xtra{color:#5cc98a;border:1px solid rgba(92,201,138,.5)}
+.chg{color:#e8c04a;border:1px solid rgba(232,192,74,.5)}
+@media(max-width:599px){.pvd{font-size:13px}.pvd>div{padding:7px 8px}}
