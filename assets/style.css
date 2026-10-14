@@ -331,3 +331,4 @@ details.wk-fold > summary .now{margin-left:10px}
 @media(max-width:599px){.pvd{font-size:13px}.pvd>div{padding:7px 8px}}
 .why{max-width:none;margin:0 0 14px;color:var(--muted);font-size:16.5px;line-height:1.6;font-weight:500}.why b{color:var(--text)}
 html{scrollbar-gutter:stable}
+@media(min-width:900px){footer .wrap{align-items:baseline}footer .foot-note{margin-top:0;text-align:right}}
