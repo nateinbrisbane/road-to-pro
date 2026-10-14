@@ -329,3 +329,4 @@ details.wk-fold > summary .now{margin-left:10px}
 .t-down{color:#f0a040;border-color:rgba(240,160,64,.5)}
 .t-swap{color:var(--subtle);border-color:var(--border-strong)}
 @media(max-width:599px){.pvd{font-size:13px}.pvd>div{padding:7px 8px}}
+.why{max-width:640px;margin:0 0 14px;color:var(--muted);font-size:16.5px;line-height:1.6;font-weight:500}.why b{color:var(--text)}
