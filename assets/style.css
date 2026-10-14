@@ -8,7 +8,7 @@ body{min-height:100vh;color:var(--text);line-height:var(--body-lh);font-size:var
   background:linear-gradient(180deg,transparent 0,var(--bg) 560px),var(--texture),var(--bg)}
 a{color:inherit;text-decoration:none}
 .num{font-family:var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
 @media(min-width:900px){.wrap{padding:0 40px}}
 .y{color:var(--hi)} .muted{color:var(--muted)} .dim{color:var(--subtle)} .g{color:var(--success)}
 .dim,.muted,.note,.crumbs,.sub,.k{font-weight:500}
@@ -330,3 +330,4 @@ details.wk-fold > summary .now{margin-left:10px}
 .t-swap{color:var(--subtle);border-color:var(--border-strong)}
 @media(max-width:599px){.pvd{font-size:13px}.pvd>div{padding:7px 8px}}
 .why{max-width:none;margin:0 0 14px;color:var(--muted);font-size:16.5px;line-height:1.6;font-weight:500}.why b{color:var(--text)}
+html{scrollbar-gutter:stable}
