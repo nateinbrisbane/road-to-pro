@@ -359,3 +359,8 @@ html{scrollbar-gutter:stable}
 @media(max-width:899px){.cd-brand{display:none}.cd-name{font-size:12px;letter-spacing:.06em}}
 @media(max-width:380px){.cd-name{font-size:11.5px;letter-spacing:.04em}}
 details.review{margin:10px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}details.review > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:10px 0;font-weight:600;font-size:14.5px;color:var(--text)}details.review > summary::-webkit-details-marker{display:none}details.review > summary .d-chev{margin-left:auto;display:inline-block}details.review[open] > summary .d-chev{transform:rotate(90deg)}.rv-body{padding:0 0 12px}.rv-body p{margin:0 0 8px}.rv-body img{max-width:100%;height:auto;border-radius:6px;display:block}
+
+/* inline status dot (HRV etc.) */
+.st .v .dot{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;max-width:100%;font-size:clamp(22px,6.2vw,34px);line-height:1.1;vertical-align:middle}
+.st .v .dot::before{flex:0 0 auto;margin-right:0;vertical-align:0}
+@media(max-width:599px){.st .v .dot{font-size:clamp(20px,6vw,28px);gap:8px}.st .v .dot::before{margin-right:0}}
