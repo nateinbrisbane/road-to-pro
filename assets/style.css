@@ -386,3 +386,14 @@ details.review{margin:10px 0;border-top:1px solid var(--border);border-bottom:1p
 .d-body .ra-cues{margin-top:12px;font-size:14.5px}
 .d-body .ra-cues b{color:var(--text);font-family:var(--display)}
 .d-body .ra-cues ol{padding-left:20px;margin-top:4px;display:flex;flex-direction:column;gap:4px}
+
+/* session extras: table + baseline card */
+.d-body .sx-tbl{margin:6px 0 12px}
+.d-body .sx-lt{margin-top:6px}
+.baseline ul.rp-note{padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.baseline > p.rp-note:first-of-type{margin:0 0 14px}
+@media(max-width:599px){.baseline .rp-hd span:nth-child(2){display:block;grid-column:1;grid-row:2}}
+.baseline .sec-head{display:block}
+.baseline .h2{white-space:normal;overflow-wrap:break-word;line-height:1.15}
+@media(max-width:599px){.baseline .h2{font-size:clamp(20px,6vw,26px)}}
+.d-body .ra .nut-h{line-height:1.4}
