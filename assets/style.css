@@ -387,13 +387,21 @@ details.review{margin:10px 0;border-top:1px solid var(--border);border-bottom:1p
 .d-body .ra-cues b{color:var(--text);font-family:var(--display)}
 .d-body .ra-cues ol{padding-left:20px;margin-top:4px;display:flex;flex-direction:column;gap:4px}
 
-/* session extras: table + baseline card */
-.d-body .sx-tbl{margin:6px 0 12px}
+/* session extras: table + sim baseline card */
+.sx-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 0}
+.sx-tbl{min-width:600px}
+.sx-tbl th,.sx-tbl td{white-space:nowrap}
+.sx-tbl td:first-child,.sx-tbl th:first-child{position:sticky;left:0;background:var(--bg);z-index:1;padding-right:14px}
+.sx-tbl td.hl{background:color-mix(in srgb,var(--hi) 16%,transparent);color:var(--text);font-weight:700;box-shadow:inset 3px 0 0 var(--hi)}
+.sx-tbl tr.tot td{color:var(--text);font-weight:700;border-top:2px solid var(--border-strong);border-bottom:0}
+.sx-note{margin:8px 0 12px;font-size:13.5px;color:var(--subtle)}
 .d-body .sx-lt{margin-top:6px}
-.baseline ul.rp-note{padding-left:20px;display:flex;flex-direction:column;gap:4px}
-.baseline > p.rp-note:first-of-type{margin:0 0 14px}
-@media(max-width:599px){.baseline .rp-hd span:nth-child(2){display:block;grid-column:1;grid-row:2}}
-.baseline .sec-head{display:block}
-.baseline .h2{white-space:normal;overflow-wrap:break-word;line-height:1.15}
-@media(max-width:599px){.baseline .h2{font-size:clamp(20px,6vw,26px)}}
 .d-body .ra .nut-h{line-height:1.4}
+.simbase .sx-scroll{border:1px solid var(--border);border-radius:14px;padding:4px 0 0}
+.simbase .sx-tbl td:first-child,.simbase .sx-tbl th:first-child{padding-left:18px}
+.simbase .sx-tbl td:last-child,.simbase .sx-tbl th:last-child{padding-right:18px}
+.simbase ul.rp-note{padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.simbase > p.rp-note:first-of-type{margin:0 0 14px}
+.simbase .sec-head{display:block}
+.simbase .h2{white-space:normal;overflow-wrap:break-word;line-height:1.15}
+@media(max-width:599px){.simbase .h2{font-size:clamp(20px,6vw,26px)}.simbase .sx-tbl td:first-child,.simbase .sx-tbl th:first-child{padding-left:12px}}
